@@ -19,7 +19,7 @@ const ExperienceItem = ({ experience, forwardedRef }) => {
           </div>
         </div>
         
-        <h4 className="text-gray-700 font-medium mb-4">{experience.company}</h4>
+        <a href={experience.companywebsite} target="_blank"><h4 className="text-gray-700 font-medium mb-4">{experience.company}</h4></a>
         <p className="text-gray-600 mb-6">
           {experience.description}
         </p>

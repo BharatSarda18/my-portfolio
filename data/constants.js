@@ -5,6 +5,7 @@ export const socialMediaDetails={
     gmailStatic:"sardabharat71@gmail.com",
     contaxctnumber:"+91 7627064727",
     location:"Noida, Uttar Pradesh, India",
+    shortLocation:"Noida",
     resumeDownloadLink:"https://drive.google.com/uc?export=download&id=1wDtY5VUzGK_HxwPO3qpvoh16lUg5bwUp",
     resumeLink:"",
     lastResumeUpdated:"April 2025",

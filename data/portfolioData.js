@@ -43,7 +43,7 @@ export const portfolioData = {
       {
         title: "Chat App",
         description: "A collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.",
-        image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+        image: "https://cdn.dribbble.com/userupload/5973251/file/original-f9ab5d5fc69d626bc9885ff08742b654.png?resize=1600x1200&vertical=center",
         tags: ["React", "Nest JS", "MongoDB", "Redux","Material UI"],
         demoLink: "https://chat-app-frontend-khaki.vercel.app/",
         repoLink: "https://github.com/BharatSarda18/chat-app-frontend"
@@ -51,7 +51,7 @@ export const portfolioData = {
       {
         title: "Personal Portfolio Website",
         description: "A responsive portfolio site to showcase my projects, skills, and experience. Includes animations and resume download option.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        image: "https://cdn.dribbble.com/userupload/11836430/file/original-8696facb39b0641248efdeb31bc641db.png?resize=752x&vertical=center",
         tags: ["Next.js", "Tailwind CSS"],
         demoLink: "https://my-portfolio-git-main-bharatsarda18s-projects.vercel.app/",
         repoLink: "https://github.com/BharatSarda18/my-portfolio"
@@ -61,6 +61,7 @@ export const portfolioData = {
       {
         title: "Full Stack Developer",
         company: "Lumiq.ai",
+        companywebsite:"https://lumiq.ai/",
         period: "2022 - Present",
         description: "Worked on multiple end-to-end web applications including APT, IPT, LaunchNav, and BDA. Developed dynamic dashboards, RESTful APIs, built authentication systems, and implemented responsive UIs using modern technologies like React.js, NestJS, PostgreSQL, and MongoDB.",
         technologies: ["JavaScript","React.js","Angular","NestJS","Next.js","MongoDB","PostgreSQL","Express.js", "Node.js", "TypeORM"]
