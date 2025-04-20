@@ -5,6 +5,10 @@ import { FaDownload, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-i
 import useReveal from "@/hooks/use-reveal";
 import { Button } from "./ui/Button";
 import { Card } from "./ui/Card";
+import bharatSardaImg from "../assets/img/bharat-sarda.jpg";
+import { socialMediaDetails } from "@/data/constants";
+
+
 
 const Hero = () => {
   const contentRef = useRef(null);
@@ -25,7 +29,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mt-2 mb-4">Bharat Sarda</h1>
             <h2 className="text-2xl md:text-3xl text-gray-700 font-semibold mb-6">Full Stack Software Engineer</h2>
             <p className="text-gray-600 text-lg mb-10 max-w-lg">
-              Building innovative web solutions with cutting-edge technologies. 3+ years of experience crafting robust and scalable applications.
+              Building innovative web solutions with cutting-edge technologies. {socialMediaDetails?.experiance?.toLocaleLowerCase()} of experience crafting robust and scalable applications.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#contact">
@@ -33,7 +37,7 @@ const Hero = () => {
                   Get in touch
                 </Button>
               </a>
-              <a href="/John_Doe_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href={socialMediaDetails.resumeDownloadLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-gray-50">
                   Download Resume <FaDownload className="ml-2" />
                 </Button>
@@ -46,12 +50,7 @@ const Hero = () => {
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-secondary opacity-10 rounded-full filter blur-3xl"></div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary opacity-10 rounded-full filter blur-3xl"></div>
               <Card className="w-full overflow-hidden rounded-2xl shadow-xl">
-                
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                  alt="John Doe - Developer" 
-                  className="w-full h-auto object-cover relative z-10"
-                />
+                <img  src={bharatSardaImg.src}  alt="Bharat Sarda" className="w-full h-auto object-cover relative z-10"/>
               </Card>
             </div>
           </div>
@@ -60,7 +59,7 @@ const Hero = () => {
         <div ref={socialRef} className="flex justify-center md:justify-start mt-16 reveal">
           <div className="flex space-x-6">
             <a 
-              href="https://github.com/"
+              href={socialMediaDetails.github}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary transition-colors text-2xl"
@@ -69,7 +68,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a 
-              href="https://linkedin.com/"
+              href={socialMediaDetails.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary transition-colors text-2xl"
@@ -78,16 +77,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a 
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary transition-colors text-2xl"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </a>
-            <a 
-              href="mailto:contact@johndoe.com"
+              href={socialMediaDetails.gmail}
               className="text-gray-600 hover:text-primary transition-colors text-2xl"
               aria-label="Email"
             >

@@ -13,11 +13,11 @@ const EducationItem = ({ education, icon: Icon, iconBgColor, forwardedRef }) => 
   >
     <div className="flex items-center mb-4">
       <div className={`w-12 h-12 rounded-full ${iconBgColor} flex items-center justify-center text-white mr-4`}>
-        <Icon className="text-xl" />
+        <Icon classMongoDBName="text-xl" />
       </div>
       <div>
         <h3 className="text-xl font-semibold text-primary">{education.degree}</h3>
-        <p className="text-gray-600">{education.institution}, {education.period}</p>
+        <p className="text-gray-600">{education.institution} {education.period}</p>
       </div>
     </div>
     <p className="text-gray-700 mt-4">
@@ -74,19 +74,12 @@ const Education = () => {
           <p className="text-gray-600 max-w-xl mx-auto">My academic background and qualifications</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <EducationItem 
             education={education[0]} 
             icon={FaGraduationCap} 
             iconBgColor="bg-primary" 
             forwardedRef={edu1Ref} 
-          />
-          
-          <EducationItem 
-            education={education[1]} 
-            icon={FaCertificate} 
-            iconBgColor="bg-secondary" 
-            forwardedRef={edu2Ref} 
           />
         </div>
         

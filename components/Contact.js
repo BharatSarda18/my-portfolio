@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import useReveal from "@/hooks/use-reveal";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaCalendarAlt, FaGithub, FaLinkedinIn, FaTwitter, FaMediumM, FaPaperPlane } from "react-icons/fa";
+import { socialMediaDetails } from "@/data/constants";
 
 const Contact = () => {
   const titleRef = useRef(null);
@@ -31,7 +32,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white opacity-80 text-sm mb-1">Email Address</h4>
-                      <p className="font-medium">sardabharat71@gmail.com</p>
+                      <p className="font-medium">{socialMediaDetails.gmailStatic}</p>
                     </div>
                   </div>
                   
@@ -41,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white opacity-80 text-sm mb-1">Phone Number</h4>
-                      <p className="font-medium">+91 7627064727</p>
+                      <p className="font-medium">{socialMediaDetails.contaxctnumber}</p>
                     </div>
                   </div>
                   
@@ -51,7 +52,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white opacity-80 text-sm mb-1">Location</h4>
-                      <p className="font-medium">Noida, Uttar Pradesh, India</p>
+                      <p className="font-medium">{socialMediaDetails.location}</p>
                     </div>
                   </div>
                   
@@ -61,7 +62,7 @@ const Contact = () => {
                   <h4 className="text-white text-lg font-medium mb-4">Connect with me</h4>
                   <div className="flex space-x-4">
                     <a 
-                      href="https://github.com/" 
+                      href={socialMediaDetails.github}
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors" 
@@ -70,31 +71,13 @@ const Contact = () => {
                       <FaGithub className="text-white" />
                     </a>
                     <a 
-                      href="https://linkedin.com/" 
+                      href={socialMediaDetails.linkedin}
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors" 
                       aria-label="LinkedIn"
                     >
                       <FaLinkedinIn className="text-white" />
-                    </a>
-                    <a 
-                      href="https://twitter.com/" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors" 
-                      aria-label="Twitter"
-                    >
-                      <FaTwitter className="text-white" />
-                    </a>
-                    <a 
-                      href="#" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-full bg-white bg-opacity-20 flex items-center justify-center hover:bg-opacity-30 transition-colors" 
-                      aria-label="Medium"
-                    >
-                      <FaMediumM className="text-white" />
                     </a>
                   </div>
                 </div>

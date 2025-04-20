@@ -1,6 +1,6 @@
 'use client';
 import { useRef } from "react";
-import { FaCode, FaServer, FaTools, FaMobileAlt, FaChartPie, FaUsers } from "react-icons/fa";
+import { FaCode, FaServer, FaTools, FaUsers } from "react-icons/fa";
 import useReveal from "@/hooks/use-reveal";
 import { portfolioData } from "@/data/portfolioData";
 
@@ -70,20 +70,6 @@ const Skills = () => {
             title="DevOps & Tools" 
             skills={skills.devops}
             forwardedRef={devopsRef}
-          />
-          
-          <SkillCategory 
-            icon={FaMobileAlt} 
-            title="Mobile Development" 
-            skills={skills.mobile}
-            forwardedRef={mobileRef}
-          />
-          
-          <SkillCategory 
-            icon={FaChartPie} 
-            title="Data & Analytics" 
-            skills={skills.data}
-            forwardedRef={dataRef}
           />
           
           <SkillCategory 

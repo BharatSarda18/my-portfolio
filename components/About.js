@@ -2,6 +2,7 @@
 import { useRef } from "react";
 import { Card } from "./ui/Card";
 import useReveal from "@/hooks/use-reveal";
+import { socialMediaDetails } from "@/data/constants";
 
 
 const About = () => {
@@ -29,7 +30,7 @@ const About = () => {
               <Card className="overflow-hidden rounded-2xl shadow-lg border-0">
                 <img 
                   src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                  alt="John Doe working on code" 
+                  alt="Bharat Sarda working on code" 
                   className="w-full h-auto object-cover"
                 />
               </Card>
@@ -43,7 +44,7 @@ const About = () => {
               I specialize in JavaScript technologies across the entire stack (MERN, MEAN) and have a strong foundation in software engineering principles.
             </p>
             <p className="text-gray-700 mb-6">
-              My journey in software development began during my computer science studies, where I discovered my passion for creating elegant solutions to complex problems. 
+              My journey in software development began during my college studies, where I discovered my passion for creating elegant solutions to complex problems. 
               Since then, I've worked on various projects ranging from e-commerce platforms to data visualization dashboards.
             </p>
             <p className="text-gray-700 mb-10">
@@ -53,11 +54,11 @@ const About = () => {
             <div className="grid grid-cols-2 gap-6 text-gray-700">
               <div>
                 <p><strong className="text-primary">Name:</strong> Bharat Sarda</p>
-                <p><strong className="text-primary">Email:</strong> sardabharat71@gmail.com</p>
-                <p><strong className="text-primary">Location:</strong> Noida, Uttar Pradesh, India</p>
+                <p><strong className="text-primary">Email:</strong> {socialMediaDetails.gmailStatic}</p>
+                <p><strong className="text-primary">Location:</strong> {socialMediaDetails.location}</p>
               </div>
               <div>
-                <p><strong className="text-primary">Experience:</strong> 3+ Years</p>
+                <p><strong className="text-primary">Experience:</strong> {socialMediaDetails.experiance}</p>
                 <p><strong className="text-primary">Availability:</strong> Full-time</p>
                 <p><strong className="text-primary">Remote:</strong> Available</p>
               </div>

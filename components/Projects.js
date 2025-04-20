@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import useReveal from "@/hooks/use-reveal";
 import { portfolioData } from "@/data/portfolioData";
+import { socialMediaDetails } from "@/data/constants";
 
 const ProjectCard = ({ project,forwardedRef }) => (
   <div 
@@ -106,7 +107,7 @@ const Projects = () => {
         
         <div ref={moreProjectsRef} className="text-center mt-12 reveal">
           <a 
-            href="https://github.com/" 
+            href={socialMediaDetails.github} 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors"

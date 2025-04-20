@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import useActiveSection from "@/hooks/use-active-section";
+import { socialMediaDetails } from "@/data/constants";
 
 
 const Header = () => {
@@ -85,7 +86,7 @@ const Header = () => {
             ))}
             <li>
               <a 
-                href="/John_Doe_Resume.pdf" 
+                href={socialMediaDetails.resumeDownloadLink}
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-secondary hover:bg-secondary/80 text-white font-medium py-2 px-4 rounded-md transition-colors"
@@ -119,7 +120,7 @@ const Header = () => {
           ))}
           <li>
             <a
-              href="/John_Doe_Resume.pdf"
+              href={socialMediaDetails.resumeDownloadLink}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-secondary hover:bg-secondary/80 text-white font-medium py-2 px-4 rounded-md transition-colors"

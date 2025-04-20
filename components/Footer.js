@@ -1,3 +1,4 @@
+import { socialMediaDetails } from "@/data/constants";
 import { FaGithub, FaLinkedinIn, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,12 +8,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold">Bharat<span className="text-secondary">Sarda</span></h2>
-            <p className="text-gray-300 mt-2">Full Stack Software Engineer</p>
+            <p className="text-gray-300 mt-2">Full Stack Developer</p>
           </div>
           
           <div className="flex space-x-6 mb-6 md:mb-0">
             <a 
-              href="https://github.com/" 
+              href={socialMediaDetails.github}
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors text-xl" 
@@ -21,7 +22,7 @@ const Footer = () => {
               <FaGithub />
             </a>
             <a 
-              href="https://linkedin.com/" 
+              href={socialMediaDetails.linkedin}
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white transition-colors text-xl" 
@@ -30,16 +31,7 @@ const Footer = () => {
               <FaLinkedinIn />
             </a>
             <a 
-              href="https://twitter.com/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors text-xl" 
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </a>
-            <a 
-              href="mailto:contact@johndoe.com" 
+              href={socialMediaDetails.gmail}
               className="text-gray-300 hover:text-white transition-colors text-xl" 
               aria-label="Email"
             >
@@ -50,7 +42,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+            &copy; {new Date().getFullYear()} Bharat Sarda. All rights reserved.
           </p>
           
           <div className="flex space-x-6">

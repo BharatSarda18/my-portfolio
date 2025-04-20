@@ -28,19 +28,19 @@ const ExperienceItem = ({ experience, forwardedRef }) => {
           {experience.technologies.map((tech, index) => {
             const tagColors ={
               "React.js": "bg-blue-100 text-blue-700",
-              TypeScript: "bg-green-100 text-green-700",
-              Redux: "bg-purple-100 text-purple-700",
-              "Next.js": "bg-yellow-100 text-yellow-700",
-              Jest: "bg-red-100 text-red-700",
-              MongoDB: "bg-blue-100 text-blue-700",
+              "TypeScript": "bg-green-100 text-green-700",
+              "Next.js": "bg-purple-100 text-purple-700",
+              "Redux": "bg-yellow-100 text-yellow-700",
+              "Jest": "bg-red-100 text-red-700",
+              "MongoDB": "bg-blue-100 text-blue-700",
               "Express.js": "bg-green-100 text-green-700",
               "Node.js": "bg-yellow-100 text-yellow-700",
-              AWS: "bg-red-100 text-red-700",
-              HTML5: "bg-blue-100 text-blue-700",
-              CSS3: "bg-green-100 text-green-700",
-              JavaScript: "bg-yellow-100 text-yellow-700",
-              jQuery: "bg-purple-100 text-purple-700",
-              WordPress: "bg-red-100 text-red-700"
+              "AWS": "bg-red-100 text-red-700",
+              "HTML5": "bg-blue-100 text-blue-700",
+              "CSS3": "bg-green-100 text-green-700",
+              "JavaScript": "bg-yellow-100 text-yellow-700",
+              "PostgreSQL": "bg-purple-100 text-purple-700",
+              "Angular": "bg-red-100 text-red-700"
             };
 
             const colorClass = tagColors[tech] || "bg-gray-100 text-gray-700";
@@ -63,14 +63,9 @@ const ExperienceItem = ({ experience, forwardedRef }) => {
 const Experience = () => {
   const titleRef = useRef(null);
   const exp1Ref = useRef(null);
-  const exp2Ref = useRef(null);
-  const exp3Ref = useRef(null);
-
   // Apply reveal animation
   useReveal(titleRef);
   useReveal(exp1Ref);
-  useReveal(exp2Ref);
-  useReveal(exp3Ref);
 
   const { experiences } = portfolioData;
 
@@ -85,8 +80,6 @@ const Experience = () => {
         
         <div className="max-w-4xl mx-auto">
           <ExperienceItem experience={experiences[0]} forwardedRef={exp1Ref} />
-          <ExperienceItem experience={experiences[1]} forwardedRef={exp2Ref} />
-          <ExperienceItem experience={experiences[2]} forwardedRef={exp3Ref} />
         </div>
       </div>
     </section>

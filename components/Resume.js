@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { FaDownload, FaLinkedin, FaGithub, FaFilePdf } from "react-icons/fa";
 import useReveal from "@/hooks/use-reveal";
 import { Card, CardContent } from "./ui/Card";
+import { socialMediaDetails } from "@/data/constants";
 
 const Resume = () => {
   const contentRef = useRef(null);
@@ -25,9 +26,9 @@ const Resume = () => {
             <CardContent className="p-0 flex flex-col items-center">
               <FaFilePdf className="text-primary text-5xl mb-4" />
               <h3 className="text-xl font-semibold text-primary mb-2">Bharat_Sarda_Resume.pdf</h3>
-              <p className="text-gray-600 mb-6">Last updated: April 2025</p>
+              <p className="text-gray-600 mb-6">Last updated: {socialMediaDetails.lastResumeUpdated}</p>
               <a 
-                href="/John_Doe_Resume.pdf" 
+                href={socialMediaDetails.resumeDownloadLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/80 text-white font-medium py-3 px-6 rounded-md transition-colors inline-flex items-center"
@@ -39,7 +40,7 @@ const Resume = () => {
           
           <div ref={linksRef} className="flex flex-wrap justify-center gap-4 reveal">
             <a 
-              href="https://linkedin.com/" 
+              href={socialMediaDetails.linkedin}
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center bg-[#0A66C2] hover:bg-[#084E99] text-white font-medium py-3 px-6 rounded-md transition-colors"
@@ -47,7 +48,7 @@ const Resume = () => {
               <FaLinkedin className="mr-2" /> LinkedIn Profile
             </a>
             <a 
-              href="https://github.com/" 
+              href={socialMediaDetails.github}
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center bg-[#24292F] hover:bg-[#1a1e23] text-white font-medium py-3 px-6 rounded-md transition-colors"
