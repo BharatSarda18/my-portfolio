@@ -10,47 +10,41 @@ const Footer = () => {
             <h2 className="text-2xl font-bold">Bharat<span className="text-secondary">Sarda</span></h2>
             <p className="text-gray-300 mt-2">Full Stack Developer</p>
           </div>
-          
+
           <div className="flex space-x-6 mb-6 md:mb-0">
-            <a 
+            <a
               href={socialMediaDetails.github}
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors text-xl" 
+              className="text-gray-300 hover:text-white transition-colors text-xl"
               aria-label="GitHub"
             >
               <FaGithub />
             </a>
-            <a 
+            <a
               href={socialMediaDetails.linkedin}
-              target="_blank" 
+              target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-300 hover:text-white transition-colors text-xl" 
+              className="text-gray-300 hover:text-white transition-colors text-xl"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn />
             </a>
-            <a 
+            <a
               href={socialMediaDetails.gmail}
-              className="text-gray-300 hover:text-white transition-colors text-xl" 
+              className="text-gray-300 hover:text-white transition-colors text-xl"
               aria-label="Email"
             >
               <FaEnvelope />
             </a>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-300 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Bharat Sarda. All rights reserved.
-          </p>
-          
-          <div className="flex space-x-6">
-            <a href="#home" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a>
-            <a href="#about" className="text-gray-300 hover:text-white text-sm transition-colors">About</a>
-            <a href="#projects" className="text-gray-300 hover:text-white text-sm transition-colors">Projects</a>
-            <a href="#contact" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</a>
-          </div>
+
+        <div className="border-t space-x-6 border-gray-700 mt-8 pt-8 flex flex-row justify-center items-center w-full">
+          <a href="#home" className="text-gray-300 hover:text-white text-sm transition-colors">Home</a>
+          <a href="#about" className="text-gray-300 hover:text-white text-sm transition-colors">About</a>
+          <a href="#projects" className="text-gray-300 hover:text-white text-sm transition-colors">Projects</a>
+          <a href="#contact" className="text-gray-300 hover:text-white text-sm transition-colors">Contact</a>
         </div>
       </div>
     </footer>
