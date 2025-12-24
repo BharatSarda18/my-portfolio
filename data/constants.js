@@ -6,9 +6,8 @@ export const socialMediaDetails={
     contaxctnumber:"+91 7627064727",
     location:"Noida, Uttar Pradesh, India",
     shortLocation:"Noida",
-    resumeDownloadLink:"https://drive.google.com/uc?export=download&id=1ISwrfh7Q6MbzM50YVS97LfGWhqIFUjVo",
-    // resumeLink:"https://drive.google.com/file/d/1wswxXv7lS9FjQKB2L0RbVQGXQBZ9kDIg/view",
-    resumeLink:" https://drive.google.com/file/d/1ISwrfh7Q6MbzM50YVS97LfGWhqIFUjVo/view",
-    lastResumeUpdated:"July 2025",
+    resumeDownloadLink:"https://drive.google.com/uc?export=download&id=1DhTrNoyem-LHWC4fxBz1IwBr785Uuq77",
+    resumeLink:"https://drive.google.com/file/d/1DhTrNoyem-LHWC4fxBz1IwBr785Uuq77/view",
+    lastResumeUpdated:"December 2025",
     experiance:"3+ Years"
 }
