@@ -1,5 +1,6 @@
 'use client';
 import { useRef } from "react";
+import Image from "next/image";
 import { FaDownload, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 //import { FaDownload, FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 import useReveal from "@/hooks/use-reveal";
@@ -50,7 +51,15 @@ const Hero = () => {
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-secondary opacity-10 rounded-full filter blur-3xl"></div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary opacity-10 rounded-full filter blur-3xl"></div>
               <Card className="w-full overflow-hidden rounded-2xl shadow-xl">
-                <img  src={bharatSardaImg.src}  alt="Bharat Sarda" className="w-full h-auto object-cover relative z-10"/>
+                <Image
+                  src={bharatSardaImg}
+                  alt="Bharat Sarda - Full Stack Software Engineer"
+                  width={600}
+                  height={800}
+                  priority
+                  className="w-full h-auto object-cover relative z-10"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
               </Card>
             </div>
           </div>
