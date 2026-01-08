@@ -1,5 +1,6 @@
 'use client';
 import { useRef } from "react";
+import Image from "next/image";
 import { Card } from "./ui/Card";
 import useReveal from "@/hooks/use-reveal";
 import { socialMediaDetails } from "@/data/constants";
@@ -28,10 +29,14 @@ const About = () => {
             <div className="relative">
               <div className="absolute top-5 -left-5 w-full h-full border-2 border-secondary rounded-2xl -z-10"></div>
               <Card className="overflow-hidden rounded-2xl shadow-lg border-0">
-                <img 
-                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
-                  alt="Bharat Sarda working on code" 
+                <Image
+                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Bharat Sarda - Full Stack Software Engineer working on code and web development"
+                  width={600}
+                  height={400}
                   className="w-full h-auto object-cover"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  loading="lazy"
                 />
               </Card>
             </div>

@@ -6,10 +6,12 @@ export const portfolioData = {
         "Next.js, Angular, Gatsby",
         "TypeScript",
         "Tailwind CSS, SASS, Styled Components",
-        "Responsive Web Design"
+        "Responsive Web Design",
+        "Material UI",
+        "Jest & puppeteer for testing"
       ],
       backend: [
-        "Node.js, Express.js, NestJS",
+        "Node.js, Express.js, NestJS, TypeScript",
         "MongoDB, PostgreSQL",
         "REST API Development",
         "GraphQL",
@@ -63,8 +65,8 @@ export const portfolioData = {
         company: "Lumiq.ai",
         companywebsite:"https://lumiq.ai/",
         period: "2022 - Present",
-        description: "Worked on multiple end-to-end web applications including APT, IPT, LaunchNav, and BDA. Developed dynamic dashboards, RESTful APIs, built authentication systems, and implemented responsive UIs using modern technologies like React.js, NestJS, PostgreSQL, and MongoDB.",
-        technologies: ["JavaScript","React.js","Angular","NestJS","Next.js","MongoDB","PostgreSQL","Express.js", "Node.js", "TypeORM"]
+        description: "Worked on multiple end-to-end web applications including MDM, APT, IPT, LaunchNav, and BDA. Developed dynamic dashboards, RESTful APIs, built authentication systems, and implemented responsive UIs using modern technologies like React.js, NestJS, PostgreSQL, and MongoDB.",
+        technologies: ["JavaScript","React.js","Angular","NestJS","Next.js","MongoDB","PostgreSQL","Express.js", "Node.js", "TypeORM", "Material UI", "TypeScript", "Docker","Tailwind CSS", "Jest", "Redux", "puppeteer"]
       }
     ],
     education: [

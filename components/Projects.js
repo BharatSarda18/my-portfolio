@@ -1,5 +1,6 @@
 'use client';
 import { useRef } from "react";
+import Image from "next/image";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 import useReveal from "@/hooks/use-reveal";
 import { portfolioData } from "@/data/portfolioData";
@@ -10,11 +11,14 @@ const ProjectCard = ({ project,forwardedRef }) => (
     ref={forwardedRef} 
     className="bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 transition-all hover:shadow-xl hover:-translate-y-1 reveal"
   >
-    <div className="h-48 overflow-hidden">
-      <img 
-        src={project.image} 
-        alt={project.title} 
-        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+    <div className="h-48 overflow-hidden relative">
+      <Image
+        src={project.image}
+        alt={`${project.title} - Project screenshot by Bharat Sarda`}
+        fill
+        className="object-cover hover:scale-105 transition-transform duration-500"
+        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        loading="lazy"
       />
     </div>
     <div className="p-6">
