@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Card } from "./ui/Card";
 import useReveal from "@/hooks/use-reveal";
 import { socialMediaDetails } from "@/data/constants";
+import aboutImage from "@/assets/img/aboutSection/aboutMe.avif";
 
 
 const About = () => {
@@ -30,7 +31,7 @@ const About = () => {
               <div className="absolute top-5 -left-5 w-full h-full border-2 border-secondary rounded-2xl -z-10"></div>
               <Card className="overflow-hidden rounded-2xl shadow-lg border-0">
                 <Image
-                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  src={aboutImage}
                   alt="Bharat Sarda - Full Stack Software Engineer working on code and web development"
                   width={600}
                   height={400}
