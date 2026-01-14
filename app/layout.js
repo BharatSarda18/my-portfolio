@@ -7,8 +7,12 @@ export const metadata = {
   title: "Bharat Sarda | Full Stack Developer",
   description: "I'm Bharat Sarda, a passionate Full Stack Developer specializing in building modern web applications using React, NestJS, and MongoDB. Explore my projects, skills, and professional journey.",
   keywords: ["Bharat Sarda", "Full Stack Developer", "React Developer", "NestJS", "MongoDB", "Portfolio"],
-  viewport: 'width=device-width, initial-scale=1.0',
-}
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export default function RootLayout({ children }) {
   return (

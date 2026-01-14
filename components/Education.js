@@ -13,7 +13,7 @@ const EducationItem = ({ education, icon: Icon, iconBgColor, forwardedRef }) => 
   >
     <div className="flex items-center mb-4">
       <div className={`w-12 h-12 rounded-full ${iconBgColor} flex items-center justify-center text-white mr-4`}>
-        <Icon classMongoDBName="text-xl" />
+        <Icon className="text-xl" />
       </div>
       <div>
         <h3 className="text-xl font-semibold text-primary">{education.degree}</h3>
