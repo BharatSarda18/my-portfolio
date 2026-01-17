@@ -32,7 +32,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white opacity-80 text-sm mb-1">Email Address</h4>
-                      <p className="font-medium">{socialMediaDetails.gmailStatic}</p>
+                      <a href={socialMediaDetails.gmail} className="font-medium hover:underline text-white">{socialMediaDetails.gmailStatic}</a>
                     </div>
                   </div>
                   
@@ -42,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="text-white opacity-80 text-sm mb-1">Phone Number</h4>
-                      <p className="font-medium">{socialMediaDetails.contaxctnumber}</p>
+                      <a href={`tel:${socialMediaDetails.contaxctnumber}`} className="font-medium hover:underline text-white">{socialMediaDetails.contaxctnumber}</a>
                     </div>
                   </div>
                   
